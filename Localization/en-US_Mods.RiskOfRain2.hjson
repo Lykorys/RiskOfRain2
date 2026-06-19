@@ -1,0 +1,70 @@
+Items: {
+	Pearl: {
+		DisplayName: Pearl
+		Tooltip: ""
+	}
+
+	MithrixSummonItem: {
+		DisplayName: Mithrix Summon Item
+		Tooltip: ""
+	}
+
+	MithrixHammer: {
+		DisplayName: Mithrix Hammer
+		Tooltip: ""
+	}
+}
+
+NPCs.Mithrix.DisplayName: Mithrix
+Projectiles.MithrixHammerProjAltUse.DisplayName: Mithrix Hammer Proj Alt Use
+
+Configs: {
+	BossConfig: {
+		DisplayName: Boss Config
+
+		Headers: {
+			BossAIAttackFP: Boss A I Attack F P Header
+			BossAIAttackSP: Boss A I Attack S P Header
+			BossAIStartPhase: Boss A I Start Phase Header
+			MithrixAISettings: Mithrix A I Settings Header
+			MithrixAIStartPhase: Mithrix A I Start Phase Header
+			projspeed: projspeed Header
+			hue: hue Header
+		}
+
+		ForcedAttackHandFP: {
+			Label: Forced Attack Hand F P
+			Tooltip: ""
+		}
+
+		ForcedAttackHandSP: {
+			Label: Forced Attack Hand S P
+			Tooltip: ""
+		}
+
+		forcedPhaseHand: {
+			Label: forced Phase Hand
+			Tooltip: ""
+		}
+
+		ForcedAttackMithrix: {
+			Label: Forced Attack Mithrix
+			Tooltip: ""
+		}
+
+		forcedPhaseMithrix: {
+			Label: forced Phase Mithrix
+			Tooltip: ""
+		}
+
+		projspeed: {
+			Label: projspeed
+			Tooltip: ""
+		}
+
+		hue: {
+			Label: hue
+			Tooltip: ""
+		}
+	}
+}
