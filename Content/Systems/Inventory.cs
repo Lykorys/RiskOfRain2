@@ -7,7 +7,7 @@ namespace RiskOfRain2.Content.Systems
 {
     public class TempInv : ModPlayer
     {
-        public Dictionary<string,Accesorisk> inv;
+        public Dictionary<string,Accesorisk> inv = new Dictionary<string, Accesorisk>();
         public int gold = 0;
         public bool isEventOnGoing => Main.bloodMoon || Main.eclipse || Main.snowMoon || Main.pumpkinMoon;
         public void AddAccessorisk(Accesorisk access)
@@ -28,8 +28,8 @@ namespace RiskOfRain2.Content.Systems
         {
             if (!isEventOnGoing)
             {
-                inv= [];
-                gold=0;
+                inv = new Dictionary<string, Accesorisk>();
+                gold = 0;
             }
             base.PostUpdate();
         }

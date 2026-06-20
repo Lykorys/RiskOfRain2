@@ -13,6 +13,11 @@ Items: {
 		DisplayName: Mithrix Hammer
 		Tooltip: ""
 	}
+
+	IrradiantPearl: {
+		DisplayName: Irradiant Pearl
+		Tooltip: ""
+	}
 }
 
 NPCs.Mithrix.DisplayName: Mithrix

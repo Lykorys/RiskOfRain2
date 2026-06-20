@@ -9,12 +9,14 @@ namespace RiskOfRain2.Content.Items.Accessories
     public abstract class Accesorisk : ModItem
     {
         //TODO destroy item on pickup and add to the player TempInv
-        public int stack = 0;
+        public int stack = 1;
         public string name => GetType().Name;
         public override bool OnPickup(Player player)
         {
-            TempInv inv = Main.LocalPlayer.GetModPlayer<TempInv>();
+            Main.NewText("PickedUp");
+            TempInv inv = player.GetModPlayer<TempInv>();
             inv.AddAccessorisk(this);
+            Main.NewText(inv.inv[name]);
             return false;
         }
         public abstract void ApplyEffect(TempInv player);
