@@ -4,7 +4,7 @@ using Terraria;
 namespace RiskOfRain2.Content.Items.Accessories.Boss
 {
     //Increases maximum health by 10% (+10% per stack).
-    public class Pearl : Accesorisk
+    public class Pearl : Accessorisk
     {
         public override void ApplyEffect(TempInv player)
         {

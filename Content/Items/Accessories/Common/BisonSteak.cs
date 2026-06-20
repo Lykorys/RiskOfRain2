@@ -5,7 +5,7 @@ using Terraria.ModLoader;
 // TODO: Implement item logic
 namespace RiskOfRain2.Content.Items.Accessories.Common
 {
-    public class BisonSteak : Accesorisk
+    public class BisonSteak : Accessorisk
     {
         public override void ApplyEffect(TempInv player)
         {

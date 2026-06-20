@@ -5,7 +5,7 @@ using Terraria.ModLoader;
 namespace RiskOfRain2.Content.Items.Accessories.Common
 {
     //Increases movement speed by 14% (+14% per stack).
-    public class PaulsGoatHoof : Accesorisk
+    public class PaulsGoatHoof : Accessorisk
     {
         public override void ApplyEffect(TempInv inv)
         {

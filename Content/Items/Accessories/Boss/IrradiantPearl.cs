@@ -4,7 +4,7 @@ using Terraria.ModLoader;
 namespace RiskOfRain2.Content.Items.Accessories.Boss
 {
     /*Increases ALL stats by 10% (+10% per stack).*/
-    public class IrradiantPearl : Accesorisk
+    public class IrradiantPearl : Accessorisk
     {
         public override void ApplyEffect(TempInv inv)
         {
