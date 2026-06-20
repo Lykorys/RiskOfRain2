@@ -18,6 +18,21 @@ Items: {
 		DisplayName: Irradiant Pearl
 		Tooltip: ""
 	}
+
+	BisonSteak: {
+		DisplayName: Bison Steak
+		Tooltip: ""
+	}
+
+	EnergyDrink: {
+		DisplayName: Energy Drink
+		Tooltip: ""
+	}
+
+	PaulsGoatHoof: {
+		DisplayName: Pauls Goat Hoof
+		Tooltip: ""
+	}
 }
 
 NPCs.Mithrix.DisplayName: Mithrix
