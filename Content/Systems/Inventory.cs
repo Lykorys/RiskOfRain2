@@ -1,6 +1,8 @@
 using System.Collections.Generic;
 using System.Data;
 using System.Formats.Asn1;
+using System.Runtime.Intrinsics.X86;
+using Microsoft.Xna.Framework;
 using RiskOfRain2.Content.Items.Accessories;
 using Terraria;
 using Terraria.ModLoader;
@@ -56,6 +58,33 @@ namespace RiskOfRain2.Content.Systems
                 gold = 0;
             }
             base.PostUpdate();
+        }
+        public float FindDistance(NPC npc)
+        {
+            return Vector2.Distance(Player.Center, npc.Center)/16f;
+        }
+        public int GetTotalEntitiesInRadius(float tileRadius)
+        {
+            int totalCount = 0;
+            float pixelRadius = tileRadius * 16f;
+            float squaredRadius = pixelRadius * pixelRadius;
+            foreach (NPC npc in Main.npc)
+            {
+                if (npc.active)
+                {
+                    float dx = Player.Center.X - npc.Center.X;
+                    float dy = Player.Center.Y - npc.Center.Y;
+                    float squaredDistance = (dx * dx) + (dy * dy);
+                    if(squaredDistance <= squaredRadius)
+                    {
+                        if (npc.friendly || (npc.damage > 0 && !npc.dontTakeDamage))
+                        {
+                            totalCount++;
+                        }
+                    }
+                }
+            }
+            return totalCount;
         }
     }
 }
