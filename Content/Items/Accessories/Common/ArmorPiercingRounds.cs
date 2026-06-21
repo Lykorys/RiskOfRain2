@@ -4,7 +4,7 @@ using Terraria.ModLoader;
 namespace RiskOfRain2.Content.Items.Accessories.Common
 {
     //Deal an additional 20% damage (+20% per stack) to bosses.
-    public class ArmorPiercingRound : Accessorisk
+    public class ArmorPiercingRounds : Accessorisk
     {
         public override void SetDefaults()
         {

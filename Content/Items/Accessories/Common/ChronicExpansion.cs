@@ -5,6 +5,7 @@ namespace RiskOfRain2.Content.Items.Accessories.Common
 {
     public class ChronicExpansion : AccessoriskCombat
     {
+        public override string Texture => "Terraria/Images/Item_3099";
         public override void SetDefaults()
         {
             rarity=Rarity.White;
@@ -13,7 +14,7 @@ namespace RiskOfRain2.Content.Items.Accessories.Common
         {
             if(innerStack>0)timeKeeper=420;
         }
-        public override void OnKillEffect(TempInv player)
+        public override void OnKillEffect(TempInv player,NPC npc)
         {
             if(innerStack<5+5*stack)innerStack++;//5 is base value because stack starts at 1
             timeKeeper=420;

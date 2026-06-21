@@ -8,6 +8,7 @@ namespace RiskOfRain2.Content.Items.Accessories.Common
 {
     public class PowerElixir : Accessorisk
     {
+        public override string Texture => "Terraria/Images/Item_188";
         public override void SetDefaults()
         {
             rarity=Rarity.White;

@@ -33,6 +33,111 @@ Items: {
 		DisplayName: Pauls Goat Hoof
 		Tooltip: ""
 	}
+
+	ArmorPiercingRounds: {
+		DisplayName: Armor Piercing Rounds
+		Tooltip: ""
+	}
+
+	BolsteringLantern: {
+		DisplayName: Bolstering Lantern
+		Tooltip: ""
+	}
+
+	CautiousSlug: {
+		DisplayName: Cautious Slug
+		Tooltip: ""
+	}
+
+	ChronicExpansion: {
+		DisplayName: Chronic Expansion
+		Tooltip: ""
+	}
+
+	DelicateWatch: {
+		DisplayName: Delicate Watch
+		Tooltip: ""
+	}
+
+	FocusCrystal: {
+		DisplayName: Focus Crystal
+		Tooltip: ""
+	}
+
+	MedKit: {
+		DisplayName: Med Kit
+		Tooltip: ""
+	}
+
+	Mocha: {
+		DisplayName: Mocha
+		Tooltip: ""
+	}
+
+	MonsterTooth: {
+		DisplayName: Monster Tooth
+		Tooltip: ""
+	}
+
+	PowerElixir: {
+		DisplayName: Power Elixir
+		Tooltip: ""
+	}
+
+	RepulsionArmorPlate: {
+		DisplayName: Repulsion Armor Plate
+		Tooltip: ""
+	}
+
+	SoldiersSyringe: {
+		DisplayName: Soldiers Syringe
+		Tooltip: ""
+	}
+
+	WhiteScrap: {
+		DisplayName: White Scrap
+		Tooltip: ""
+	}
+
+	Infusion: {
+		DisplayName: Infusion
+		Tooltip: ""
+	}
+
+	DelicateWatchBroken: {
+		DisplayName: Delicate Watch Broken
+		Tooltip: ""
+	}
+
+	EmptyBottle: {
+		DisplayName: Empty Bottle
+		Tooltip: ""
+	}
+
+	RollOfPennies: {
+		DisplayName: Roll Of Pennies
+		Tooltip: ""
+	}
+
+	StickyBomb: {
+		DisplayName: Sticky Bomb
+		Tooltip: ""
+	}
+
+	BerzerkersPauldron: {
+		DisplayName: Berzerkers Pauldron
+		Tooltip: ""
+	}
+
+	ShrineOfChanceItem: {
+		DisplayName: Shrine Of Chance Item
+		Tooltip: ""
+	}
+
+	SmallChestItem: {
+		DisplayName: Small Chest Item
+		Tooltip: ""
+	}
 }
 
 NPCs.Mithrix.DisplayName: Mithrix

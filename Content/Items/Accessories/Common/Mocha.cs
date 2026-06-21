@@ -7,6 +7,7 @@ namespace RiskOfRain2.Content.Items.Accessories.Common
     //Increases attack speed by 7.5% (+7.5 per stack) and movement speed by 7% (+7% per stack).
     public class Mocha : Accessorisk
     {
+        public override string Texture => "Terraria/Images/Item_5042";
         public override void SetDefaults()
         {
             rarity=Rarity.White;

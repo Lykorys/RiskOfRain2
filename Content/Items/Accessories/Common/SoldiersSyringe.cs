@@ -7,6 +7,7 @@ namespace RiskOfRain2.Content.Items.Accessories.Common
     //Increases attack speed by 15% (+15% per stack).
     public class SoldiersSyringe : Accessorisk
     {
+        public override string Texture => "Terraria/Images/Item_3009";
         public override void SetDefaults()
         {
             rarity=Rarity.White;

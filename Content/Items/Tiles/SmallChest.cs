@@ -5,40 +5,42 @@ using Terraria.ModLoader;
 
 namespace RiskOfRain2.Content.Tiles
 {
-    public class ShrineOfChance : Interactable
+    public class SmallChest : Interactable
     {
-        public override string Texture => "Terraria/Images/Tiles_106";
-        public int itemDropped = 0;
+        public override string Texture => "Terraria/Images/Tiles_26"; 
+
+        
         public override void SetStaticDefaults()
         {
-            price=17;
+            Main.tileFrameImportant[Type] = true;
+            TileID.Sets.DisableSmartCursor[Type] = true;
+            price = 17;
         }
-
+        
         public override bool RightClick(int i, int j)
         {
             Player player = Main.LocalPlayer;
             TempInv modPlayer = player.GetModPlayer<TempInv>();
-            if (modPlayer.gold >= price && itemDropped<2)
+            if (modPlayer.gold >= price && !isDone)
             {
-                modPlayer.gold-=price;
-                price=(int)(price*1.40f);
-                bool itemG = generateItem(45f,36f,9f,1f,9f);
-                if(itemG) itemDropped++;
+                modPlayer.gold -= price;
+                isDone=true;
+                generateItem(0f,79.2f, 19.8f, 1f, 0f);
             }
             return false;
         }
     }
-    public class ShrineOfChanceItem : ModItem
+
+    public class SmallChestItem : ModItem
     {
-        public override string Texture => "Terraria/Images/Item_388";
+        public override string Texture => "Terraria/Images/Item_" + ItemID.GoldChest;
+
         public override void SetDefaults()
         {
-            // Visuals and Hitbox
             Item.width = 24;
             Item.height = 24;
             Item.maxStack = 99;
             
-            // Usage Properties
             Item.useTurn = true;
             Item.autoReuse = true;
             Item.useAnimation = 15;
@@ -46,20 +48,17 @@ namespace RiskOfRain2.Content.Tiles
             Item.useStyle = ItemUseStyleID.Swing;
             Item.consumable = true;
 
-            // Rarity and Value
             Item.value = Item.buyPrice(silver: 10);
-            Item.rare = ItemRarityID.Green; // Risk of Rain tier 1 green flavor!
+            Item.rare = ItemRarityID.Green; 
 
-            // CRITICAL: Connects this item to your ModTile
-            Item.createTile = ModContent.TileType<ShrineOfChance>();
+            Item.createTile = ModContent.TileType<SmallChest>();
         }
 
         public override void AddRecipes()
         {
-            // Example recipe: Adjust this to whatever crafting materials you want
             CreateRecipe()
-                .AddIngredient(ItemID.StoneBlock, 30)
-                .AddIngredient(ItemID.GoldCoin, 1)
+                .AddIngredient(ItemID.IronBar, 5)
+                .AddIngredient(ItemID.Wood, 10)
                 .AddTile(TileID.Anvils)
                 .Register();
         }

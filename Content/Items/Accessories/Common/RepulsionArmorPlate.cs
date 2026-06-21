@@ -6,6 +6,7 @@ namespace RiskOfRain2.Content.Items.Accessories.Common
 {
     public class RepulsionArmorPlate : Accessorisk
     {
+        public override string Texture => "Terraria/Images/Item_938";
         public override void SetDefaults()
         {
             rarity=Rarity.White;

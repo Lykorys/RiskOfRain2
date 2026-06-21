@@ -6,6 +6,7 @@ namespace RiskOfRain2.Content.Items.Accessories.Common
     //2 seconds after getting hurt, heal for 20 plus an additional 5% (+5% per stack) of maximum health.
     public class MedKit : AccessoriskCombat
     {
+        public override string Texture => "Terraria/Images/Item_902";
         public override void SetDefaults()
         {
             rarity=Rarity.White;
@@ -14,7 +15,7 @@ namespace RiskOfRain2.Content.Items.Accessories.Common
         {
             timeKeeper=120;
         }
-        public override void OnKillEffect(TempInv player){}
+        public override void OnKillEffect(TempInv player,NPC npc){}
         public override void ApplyEffect(TempInv player)
         {
             if (timeKeeper == 0)

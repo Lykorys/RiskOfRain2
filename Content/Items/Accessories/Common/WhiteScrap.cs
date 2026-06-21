@@ -6,6 +6,7 @@ namespace RiskOfRain2.Content.Items.Accessories.Common
 {
     public class WhiteScrap : Scrap
     {
+        public override string Texture => "Terraria/Images/Item_2";
         public override void SetDefaults()
         {
             rarity=Rarity.White;

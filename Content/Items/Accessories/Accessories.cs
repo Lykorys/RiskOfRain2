@@ -13,7 +13,8 @@ namespace RiskOfRain2.Content.Items.Accessories
         Yellow,
         Blue,
         Purple,
-        Orange
+        Orange,
+        Untiered
     }
     public abstract class Accessorisk : ModItem
     {
@@ -34,7 +35,7 @@ namespace RiskOfRain2.Content.Items.Accessories
     }
     public abstract class AccessoriskCombat : Accessorisk
     {
-        public abstract void OnKillEffect(TempInv player);
+        public abstract void OnKillEffect(TempInv player,NPC npc);
         public abstract void OnHitEffect(TempInv player,NPC npc);
     }
     public abstract class Scrap : Accessorisk{}
